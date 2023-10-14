@@ -1,0 +1,78 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Catlet - AI driven pet feeder"
+theme = "agnes-hugo-theme"
+
+[params]
+	dateFormat = "Jan 2, 2023" 
+	authorName = "Team Catlet"
+	google_analytics_id = "GA-"
+	
+[menu]
+	[[menu.main]]
+		Name = "Contact"
+		URL = "#"
+		weight = 1
+	
+	[[menu.main]]
+		Name = "About us"
+		URL = "#"
+		weight = 2
+	
+	# [[menu.main]]
+	# 	Name = "FAQ's"
+	# 	URL = "#"
+	# 	weight = 3
+	
+	# [[menu.main]]
+	# 	Name = "Support"
+	# 	URL = "#"
+	# 	weight = 4
+		
+# [params.social]
+# 	TwitterURL = "https://twitter.com/podbharati"
+# 	GoogleURL = "http://google.com"
+# 	FacebookURL = "https://facebook.com/podbharati"
+		
+[params.content]
+	LeadTitle = "One device, all of your pets' dietary needs"
+	LeadDescription = "CatLet is an AI driven pet feeder - created with the aim of matching your pets' unique dietary needs 😺. Zero hassle, no chipping required 🙅‍♂️. \n\n\n Make sure your pets live long and happy lives, while saving time & money."
+	ButtonCaption = "Sign up"
+	ButtonURL = "#waitingList"
+
+################### Feature Columns (do not exceed 4) ####################
+
+[[params.feature]]
+	FeatureTitle = "One device, multiple diets"
+	FeatureDescription = "A single CatLet device can support up to two separate diets, thus letting you cut on both on the price 💰 and on space."
+	FeatureImage = "images/feature-1.png"
+	
+[[params.feature]]
+	FeatureTitle = "No chipping required"
+	FeatureDescription = "We use AI to recognise each of your pets. Thus not requiring any form of chipping, or bulky collars 😻"
+	FeatureImage = "images/feature-2.png"
+
+[[params.feature]]
+	FeatureTitle = "Food intake monitoring"
+	FeatureDescription = "We use AI to monitor food intake of your pet. Always letting you know if they eat enough, or how well they are doing in their diet 🍕"
+	FeatureImage = "images/feature-3.png"
+	
+[[params.feature]]
+	FeatureTitle = "AI driven health risks notifications"
+	FeatureDescription = "We use AI in prevention of health issues. CatLet will make sure you don't miss any obvious signs if your pets' health declines 🩺"
+	FeatureImage = "images/feature-4.png"
+	
+################### Pricing Columns (do not exceed 3) ####################
+
+[[params.pricing]]
+	PricingTitle = "Early bird"
+	PricingRate = "27"	
+	ButtonCaption = "Get Early Access"
+	[[params.pricing.Features]]
+		Description = "Get notified when CatLet launches 🚀"
+	[[params.pricing.Features]]
+		Description = "Be one of the first customers to get your unit 🥇"	
+	[[params.pricing.Features]]
+		Description = "We do not spam, promise 🔕"	
+	[[params.pricing.Features]]
+		Description = "Exclusive early bird discount 💸"

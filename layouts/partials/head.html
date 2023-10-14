@@ -15,6 +15,12 @@
 		{{ end }}
 		{{ $title := print .Site.Title " | " .Title }}
 		{{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
+		<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="theme-color" content="#ffffff">
 		<title>{{ $title }}</title>
 		<link href="https://fonts.googleapis.com/css?family=Hind+Vadodara:400,700|Mukta:500,700" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="/css/style.css">		

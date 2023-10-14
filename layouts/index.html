@@ -14,6 +14,9 @@
 									<stop stop-color="#A7FDE8" stop-opacity="0" offset="0%"/>
 									<stop stop-color="#6EFACC" offset="100%"/>
 								</linearGradient>
+								<pattern id="hero-image" patternUnits="userSpaceOnUse" width="528" height="413">
+									<image href="images/hero-illustration-b.jpg" x=0 y=0 width="528" height="418" />
+								</pattern>
 								<linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="hero-illustration-b">
 									<stop stop-color="#FF4F7A" stop-opacity="0" offset="0%"/>
 									<stop stop-color="#FF4F7A" offset="100%"/>
@@ -25,10 +28,6 @@
 								<linearGradient x1="0%" y1="100%" y2="0%" id="hero-illustration-d">
 									<stop stop-color="#007CFE" stop-opacity="0" offset="0%"/>
 									<stop stop-color="#007DFF" offset="100%"/>
-								</linearGradient>
-								<linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="hero-illustration-e">
-									<stop stop-color="#FF4F7A" stop-opacity="0" offset="0%"/>
-									<stop stop-color="#FF4F7A" offset="100%"/>
 								</linearGradient>
 								<filter x="-500%" y="-500%" width="1000%" height="1000%" filterUnits="objectBoundingBox" id="dropshadow-1">
 									<feOffset dy="16" in="SourceAlpha" result="shadowOffsetOuter"/>
@@ -55,7 +54,7 @@
 								</g>
 								<path d="M0 0h528v414H0z"/>
 								<path fill="#FFF" d="M0 63h528v297H0z" style="mix-blend-mode:multiply;filter:url(#dropshadow-1)"/>
-								<path fill="#FFF" d="M0 63h528v297H0z"/>
+								<path fill="url(#hero-image)" d="M0 63h528v297H0z"/>
 								<path fill="url(#hero-illustration-b)" d="M408 230h80v48h-80z"/>
 								<path d="M0 0h4v4H0V0zm0 12h4v4H0v-4zm0 12h4v4H0v-4zm0 12h4v4H0v-4zm0 12h4v4H0v-4zm0 12h4v4H0v-4zM12 0h4v4h-4V0zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zM24 0h4v4h-4V0zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zM36 0h4v4h-4V0zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zM48 0h4v4h-4V0zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zM60 0h4v4h-4V0zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4z" transform="rotate(45 -118.861 431.981)" fill="url(#hero-illustration-c)"/>
 								<path fill="#FFF" d="M288 254h160v160H288z" style="mix-blend-mode:multiply;filter:url(#dropshadow-1)"/>
@@ -96,7 +95,8 @@
 				<div class="section-square"></div>
 				<div class="container">
 					<div class="pricing-inner section-inner has-top-divider">
-                        <h2 class="section-title mt-0 text-center">Pricing</h2>
+                        <h2 id="waitingList" class="section-title mt-0 text-center">Sign up for CatLet' waiting list</h2>
+						<p class="section-title mt-0 text-center">We did not launch just yet, but we are working on it 🪛 <br>Join our waiting list, get exclusive perks & be first to grab your own CatLet device.</p>
                         <div class="pricing-tables-wrap">
 							{{ range site.Params.pricing }}
                             <div class="pricing-table">
@@ -104,7 +104,6 @@
                                     <div class="pricing-table-main">
                                         <div class="pricing-table-header is-revealing">
                                             <div class="pricing-table-title mt-12 mb-8">{{ .PricingTitle }}</div>
-                                            <div class="pricing-table-price mb-32 pb-24"><span class="pricing-table-price-currency h4">$</span><span class="pricing-table-price-amount h2">{{ .PricingRate }}</span>/mo</div>
                                         </div>
                                         <ul class="pricing-table-features list-reset text-xs mt-24 mb-56">
 											{{ range .Features }}
@@ -120,7 +119,7 @@
                                         </ul>
                                     </div>
                                     <div class="pricing-table-cta is-revealing">
-                                        <a class="button button-primary button-shadow button-block" href="#">{{ .ButtonCaption }}</a>
+										<script async src="https://eocampaign1.com/form/82c0b612-6a7b-11ee-afe1-dd11c8f85577.js" data-form="82c0b612-6a7b-11ee-afe1-dd11c8f85577"></script>
                                     </div>
                                 </div>
                             </div> 
